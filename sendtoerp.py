@@ -16,7 +16,7 @@ request = requests.post( url, data=json.dumps(data), headers={"Authorization":"T
 
 
 
-#RECEIVE ON ERPNEXT
+#FUNCTION TO RECEIVE DATA ON ERPNEXT
 @frappe.whitelist()
 def receive_post_data():
   data = frappe.request.data
